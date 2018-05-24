@@ -11,6 +11,7 @@ h1 {
   /* font-family: 'Quicksand', sans-serif; */
   font-size: 3em;
   color: #191a1c;
+  opacity: 0.7;
 }
 
 .white-heading {
@@ -42,7 +43,7 @@ section {
 
 .section-two {
   background-color: #edeff2;
-  height: 45vw;
+  height: 50vw;
   overflow-x: hidden;
   overflow-y: auto;
 }
@@ -118,4 +119,5 @@ header {
 
 .footer-greeting {
   color: #edeff2;
+  opacity: 0.7;
 }
