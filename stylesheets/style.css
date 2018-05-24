@@ -13,6 +13,10 @@ h1 {
   color: #191a1c;
 }
 
+.white-heading {
+  color: #edeff2;
+}
+
 section {
   height: 25vw;
   width: 100vw;
@@ -25,15 +29,47 @@ section {
 
 .section-one {
   height: 35vw;
+  background: #1f2021 url("../images/photo.jpg") no-repeat center;
+  background-blend-mode: overlay;
+  background-size: cover;
+  color: white;
+}
+
+.first-line {
+  font-size: 1.2em;
+  letter-spacing: 1px;
 }
 
 .section-two {
   background-color: #edeff2;
+  height: 45vw;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.screenshots {
+  width: 30vw;
+  border: 2px solid #3f6aaf;
+  border-radius: 20px;
+}
+
+.float-container {
+  width: 90vw;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.floats {
+  float: left;
+  margin: 3.5%;
 }
 
 header {
   width: 100vw;
   min-height: 5vw;
+  border-bottom: 3px solid #3f6aaf;
 }
 
  .nav-list {
@@ -65,6 +101,7 @@ header {
   background-color: #3f6aaf;
   color: white;
   text-align: center;
+  border-top: 3px solid #1f2021;
 }
 
 .footer-list {
