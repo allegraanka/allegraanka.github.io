@@ -3,158 +3,49 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  font-family: 'Tenor Sans', sans-serif;
-  color: #3a3b3d;
-}
-
-h1 {
-  /* font-family: 'Quicksand', sans-serif; */
-  font-size: 3em;
-  color: #191a1c;
-  opacity: 0.7;
-}
-
-.white-heading {
-  color: #edeff2;
-}
-
-section {
-  height: 25vw;
+  height: 100vh;
   width: 100vw;
-}
-
-.section-content {
-  width: 50vw;
-  margin-left: 15%;
-}
-
-.section-one {
-  height: 45vw;
   background: #1f2021 url("../images/photo.jpg") no-repeat center;
   background-blend-mode: overlay;
   background-size: cover;
-  color: white;
-}
-
-.first-line {
-  font-size: 1.2em;
-  letter-spacing: 1px;
-}
-
-.section-two {
-  background-color: #3a3b3d;
   color: #FEFCFC;
-  min-height: 45vw;
-  display: flex;
-  flex-direction: row;
-  overflow: auto;
+  font-family: 'Roboto', sans-serif;
 }
 
-.photo-wrapper {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-flow: row wrap;
+h1 {
+  font-size: 5vw;
+  opacity: 0.5;
 }
 
-header {
-  width: 100vw;
-  min-height: 5vw;
-  border-bottom: 3px solid #3f6aaf;
+/* link styling */
+
+a {
+  color: #FEFCFC;
 }
 
- .nav-list {
-   list-style-type: none;
-   padding: 0.5% 0;
- }
-
- .nav-list li {
-   display: inline;
-   margin-right: 5px;
-   text-transform: uppercase;
- }
-
- .projects-header {
-   color: #FEFCFC;
- }
-
- /* link styling */
-
- a {
-   text-decoration: none;
- }
-
- .link-style {
-   color: #3f6aaf;
- }
-
- a:hover {
-   text-decoration: underline;
- }
-
- a:visited {
-   color: #a0a5af;
- }
-
- .current-page a {
-   background-color: #FEFCFC;
-   border: 1px solid #3f6aaf;
-   border-radius: 4px;
-   padding: 0.5%;
- }
-
- p {
-   line-height: 1.6;
-   font-size: 18px;
- }
-
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100vw;
-  background-color: #3f6aaf;
-  color: white;
-  text-align: center;
-  border-top: 3px solid #FEFCFC;
+a:hover {
+  color: #fc8d8d;
+  text-decoration: underline;
 }
 
-.footer-list {
+a:visited {
+  color: #b29d37;
+}
+/* contact and socials section/logos styling */
+.section-content {
+  width: 50vw;
+  opacity: 0.7;
+}
+
+.socials {
+  width: 50vw;
+}
+
+.social-logos {
   list-style-type: none;
 }
 
-.footer-list li {
+.social-logos li {
   display: inline;
-}
-
-.footer-list li a {
-  color: white;
-}
-
-.copyright {
-  font-size: 0.75em;
-}
-
-.linkedin-logo {
-  width: 75px;
-  margin: 1%;
-}
-
-.github-logo {
-  width: 25px;
-  margin: 1%;
-}
-
-.email-logo {
-  width: 25px;
-  margin: 1%;
-}
-
-figure {
-  float: left;
-}
-
-.thumbnail {
-  border: 2px solid #FEFCFC;
-  border-radius: 5px;
-  width: 25vw;
+  margin: 0 2%;
 }
