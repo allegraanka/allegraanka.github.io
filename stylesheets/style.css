@@ -13,8 +13,7 @@ body {
 }
 
 h1 {
-  font-size: 5vw;
-  opacity: 0.5;
+  font-size: 6vw;
 }
 
 /* link styling */
@@ -48,4 +47,13 @@ a:visited {
 .social-logos li {
   display: inline;
   margin: 0 2%;
+}
+
+.logos {
+  width: 2.5vw;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
 }
