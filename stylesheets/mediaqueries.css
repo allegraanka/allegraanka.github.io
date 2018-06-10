@@ -8,6 +8,21 @@
   .section-content {
     width: 80vw;
   }
+  header {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 10vh;
+    color: #FEFCFC;
+    background-color: black;
+    z-index: 1;
+  }
+  h1 {
+    font-size: 1.8em;
+  }
+  .nav-links {
+    font-size: 1.4em;
+  }
 }
 
 @media screen and (min-width: 600px) and (max-width: 900px) {
@@ -20,6 +35,15 @@
   .section-content {
     width: 80vw;
   }
+  header {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 10vh;
+    color: #FEFCFC;
+    background-color: black;
+    z-index: 1;
+  }
 }
 
 @media screen and (min-width: 900px) and (max-width: 1200px) {
@@ -31,5 +55,14 @@
   }
   .section-content {
     width: 80vw;
+  }
+  header {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 10vh;
+    color: #FEFCFC;
+    background-color: black;
+    z-index: 1;
   }
 }
