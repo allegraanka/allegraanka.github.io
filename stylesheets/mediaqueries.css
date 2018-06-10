@@ -1,0 +1,35 @@
+@media screen and (max-width: 600px) {
+  .socials {
+    width: 100vw;
+  }
+  .logos {
+    width: 10.5vw;
+  }
+  .section-content {
+    width: 80vw;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  .socials {
+    width: 100vw;
+  }
+  .logos {
+    width: 6.5vw;
+  }
+  .section-content {
+    width: 80vw;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+  .socials {
+    width: 100vw;
+  }
+  .logos {
+    width: 4.5vw;
+  }
+  .section-content {
+    width: 80vw;
+  }
+}
