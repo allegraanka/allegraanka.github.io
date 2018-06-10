@@ -17,6 +17,7 @@ header {
   width: 100vw;
   height: 10vh;
   color: #FEFCFC;
+  z-index: 1;
 }
 
 .nav-list {
