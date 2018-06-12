@@ -37,6 +37,11 @@ h1 {
   left: 25px;
 }
 
+.greeting {
+  font-size: 1.4em;
+  font-weight: 900;
+}
+
 .title-header {
   color: #fc8d8d;
   font-size: 3.5em;
