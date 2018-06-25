@@ -8,7 +8,7 @@ body {
   background-blend-mode: overlay;
   background-size: cover;
   color: #FEFCFC;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 header {
@@ -31,20 +31,15 @@ header {
   display: inline;
 }
 
-h1 {
-  font-size: 1.5em;
-  position: absolute;
-  left: 25px;
-}
-
 .greeting {
   font-size: 1.4em;
-  font-weight: 900;
 }
 
 .title-header {
-  color: #fc8d8d;
-  font-size: 3.5em;
+  color: white;
+  font-size: 4.5em;
+  margin-bottom: 0;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .section-content {
@@ -60,20 +55,49 @@ h1 {
   font-size: 1.4em;
 }
 
+/* project image gallery styling below */
+.project-gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 50vw;
+  overflow: auto;
+  margin-bottom: 5%;
+  border: 2px solid #FEFCFC;
+}
+
+.skills-style {
+  color: #c7ebed;
+}
+
 /* link styling */
 
-a {
-  color: #FEFCFC;
+.nav-links {
+  color: #c7ebed;
   text-decoration: none;
 }
 
 a:hover {
-  color: #fc8d8d;
-  text-decoration: underline;
+  color: #0f969b;
 }
 
 a:visited {
-  color: #b29d37;
+  color: #FEFCFC;
+}
+
+.current {
+  text-decoration: underline;
+}
+
+.lets-talk {
+  text-decoration: none;
+  color: #c7ebed;
+}
+.lets-talk.hover {
+  color: white;
 }
 
 /* contact and socials section/logos styling */
@@ -129,4 +153,5 @@ a:visited {
 .contact-greeting {
   letter-spacing: 1px;
   font-size: 2.2em;
+  color: white;
 }
