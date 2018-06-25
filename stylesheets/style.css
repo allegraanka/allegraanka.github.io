@@ -36,7 +36,7 @@ header {
 }
 
 .title-header {
-  color: #0f969b;
+  color: white;
   font-size: 4.5em;
   margin-bottom: 0;
   font-family: 'Open Sans', sans-serif;
@@ -97,7 +97,7 @@ a:visited {
   color: #c7ebed;
 }
 .lets-talk.hover {
-  color: #0f969b;
+  color: white;
 }
 
 /* contact and socials section/logos styling */
@@ -153,5 +153,5 @@ a:visited {
 .contact-greeting {
   letter-spacing: 1px;
   font-size: 2.2em;
-  color: #0f969b;
+  color: white;
 }
