@@ -1,10 +1,12 @@
-var prevScrollPosition = window.pageYOffset;
-window.onscroll = function() {
-  var currentScrollPosition = window.pageYOffset;
-  if (prevScrollPosition > currentScrollPosition) {
-    document.getElementById("navbar").style.top = "0";
-  } else {
-    document.getElementById("navbar").style.top = "-100px";
-  }
-  prevScrollPosition = currentScrollPosition;
-}
+
+$(document).ready(function() {
+  $("#fade").hide();
+  $("#fadeTwo").hide();
+  $("#fade").fadeIn(2000);
+  $("#fadeTwo").fadeIn(4000);
+});
+
+$(document).ready(function() {
+  $("#slide").hide();
+  $("#slide").slideDown(4000);
+});

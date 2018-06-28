@@ -4,10 +4,10 @@ body {
   justify-content: center;
   flex-direction: column;
   margin: auto;
-  background: #1f2021 url("../images/photo.jpg") no-repeat center;
+  /* background: #1f2021 url("../images/photo.jpg") no-repeat center;
   background-blend-mode: overlay;
-  background-size: cover;
-  color: #FEFCFC;
+  background-size: cover; */
+  background-color: #FEFCFC;
   font-family: 'Lato', sans-serif;
 }
 
@@ -16,7 +16,6 @@ header {
   top: 0;
   width: 100vw;
   height: 10vh;
-  color: #FEFCFC;
   z-index: 1;
 }
 
@@ -36,7 +35,6 @@ header {
 }
 
 .title-header {
-  color: white;
   font-size: 4.5em;
   margin-bottom: 0;
   font-family: 'Open Sans', sans-serif;
@@ -69,36 +67,7 @@ header {
   border: 2px solid #FEFCFC;
 }
 
-.skills-style {
-  color: #c7ebed;
-}
-
 /* link styling */
-
-.nav-links {
-  color: #c7ebed;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #0f969b;
-}
-
-a:visited {
-  color: #FEFCFC;
-}
-
-.current {
-  text-decoration: underline;
-}
-
-.lets-talk {
-  text-decoration: none;
-  color: #c7ebed;
-}
-.lets-talk.hover {
-  color: white;
-}
 
 /* contact and socials section/logos styling */
 .section-content {
@@ -133,11 +102,9 @@ a:visited {
   width: 100vw;
   height: 40vh;
   background-color: #fc8d8d;
-  border-top: 1px solid #FEFCFC;
 }
 
 .footer-header {
-  color: #FEFCFC;
   font-size: 3.5em;
 }
 
@@ -153,5 +120,4 @@ a:visited {
 .contact-greeting {
   letter-spacing: 1px;
   font-size: 2.2em;
-  color: white;
 }
