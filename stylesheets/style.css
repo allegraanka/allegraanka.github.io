@@ -112,6 +112,11 @@ header {
   list-style-type: none;
 }
 
+.skills-div {
+  margin: 2.5%;
+  padding: 1%;
+}
+
 .home-button {
   margin: 2%;
   padding: 1%;
@@ -120,4 +125,9 @@ header {
 .contact-greeting {
   letter-spacing: 1px;
   font-size: 2.2em;
+}
+
+#slide {
+  width: 45px;
+  margin: 15%;
 }
