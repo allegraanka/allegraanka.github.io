@@ -1,133 +1,28 @@
 body {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
-  margin: auto;
-  /* background: #1f2021 url("../images/photo.jpg") no-repeat center;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 50vh;
+  background: #e5e5e5 url("../images/photo.jpg") no-repeat center;
+  background-size: cover;
   background-blend-mode: overlay;
-  background-size: cover; */
-  background-color: #FEFCFC;
-  font-family: 'Lato', sans-serif;
-}
-
-header {
-  position: fixed;
-  top: 0;
-  width: 100vw;
-  height: 10vh;
-  z-index: 1;
-}
-
-.nav-list {
-  list-style-type: none;
-  position: absolute;
-  right: 25px;
-  top: 10px;
-}
-
-.nav-list-items {
-  display: inline;
-}
-
-.greeting {
-  font-size: 1.4em;
-}
-
-.title-header {
-  font-size: 4.5em;
-  margin-bottom: 0;
-  font-family: 'Open Sans', sans-serif;
-}
-
-.section-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  height: 100vh;
-  width: 100vw;
-}
-
-.section-paragraph {
-  font-size: 1.4em;
-}
-
-/* project image gallery styling below */
-.project-gallery {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 100vh;
-  width: 50vw;
-  overflow: auto;
-  margin-bottom: 5%;
-  border: 2px solid #FEFCFC;
-}
-
-/* link styling */
-
-/* contact and socials section/logos styling */
-.section-content {
-  width: 50vw;
-  opacity: 0.7;
-}
-
-.socials {
-  width: 50vw;
-}
-
-.social-logos {
-  list-style-type: none;
-  text-align: center;
-  padding: 0;
-}
-
-.social-logos li {
-  display: inline;
-  margin: 0 2%;
-}
-
-.logos {
-  width: 2.5vw;
-}
-
-.footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 100vw;
-  height: 40vh;
-  background-color: #fc8d8d;
-}
-
-.footer-header {
-  font-size: 3.5em;
-}
-
-.skills-list {
-  list-style-type: none;
-}
-
-.skills-div {
-  margin: 2.5%;
-  padding: 1%;
-}
-
-.home-button {
-  margin: 2%;
-  padding: 1%;
-}
-
-.contact-greeting {
-  letter-spacing: 1px;
-  font-size: 2.2em;
-}
-
-#slide {
-  width: 45px;
-  margin: 15%;
+  border-top: 1px solid black;
 }

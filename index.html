@@ -1,56 +1,78 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title> Allegra Anka | Portfolio </title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Animate.css CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+    <!-- CSS Stylesheets -->
     <link rel="stylesheet" type="text/css" href="stylesheets/style.css"/>
     <link rel="stylesheet" type="text/css" href="stylesheets/mediaqueries.css"/>
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title> Allegra Anka | Portfolio </title>
   </head>
 
   <body>
-    <header>
-      <nav class="nav-bar">
-        <ul class="nav-list">
-          <!-- <li class="nav-list-items nav-links"><a href="#">Work</a></li>
-          | -->
-          <li class="nav-list-items"><a href="resume.html" class="nav-links">Skills & Experience</a></li>
-          |
-          <li class="nav-list-items"><a href="contact.html" class="nav-links">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <section class="section-content">
-      <h3 id="fade" class="title-header"> Hi! I'm Allegra. </h3>
-      <h2 id="fadeTwo"> I'm a full stack web developer living in Philadelphia. </h2>
-      <img id="slide" class="animated fadeInDown" src="images/down-arrow.svg">
+    <section class="intro">
+      <h1 class="display-3 text-center"> Hi. I'm Allegra. </h1>
+      <p class="lead text-center">I'm a Full Stack Developer living in Philadelphia.</p>
     </section>
 
-    <section class="section-content">
-      <p class="section-paragraph">
-       I work to create enjoyable user experiences, anticipate pain points, and write clean, DRY code. I build projects in JavaScript and Ruby on Rails, and I have strong skills in HTML5, CSS3, Sass, and Bootstrap. I'm currently learning React. If you're looking for web solutions that work well and look great, <span><a href="contact.html" class="lets-talk">let's talk</span></a>.
+    <section class="about">
+      <h1 class="text-center">About</h1>
+      <p class="text-justify mx-auto" style="width: 65%;">
+        I work to create enjoyable user experiences, anticipate pain points and write clean, DRY code. I write in JavaScript, React, Node.js and Ruby on Rails. I have strong skills in HTML5, CSS3, Bootstrap and Sass. I'm personally and professionally invested in trying new things and learning all the time.
       </p>
-      <p class="section-paragraph">
-        When I'm not coding, I'm usually writing music, going to shows, watching Buffy or reading dystopian sci-fi.
+      <p class="text-justify mx-auto" style="width: 65%;">
+        When I'm not coding, I'm usually writing music, going to shows, watching Buffy, listening to all sorts of podcasts, or reading dystopian sci-fi.
       </p>
-      <p class="section-paragraph">
-        I'm always excited to nerd out about any/all of these things over a nice beer or a cup of coffee.
+      <p class="text-justify mx-auto" style="width: 65%;">
+        I'm always excited to nerd out on any/all of these things over a nice beer or cup of coffee.
       </p>
     </section>
 
-    <center>
-      <div class="socials">
-        <ul class="social-logos">
-          <li><a href="https://github.com/allegraanka" target="_blank"><img src="images/github.svg" class="logos"/></a></li>
-          <li><a href="https://www.linkedin.com/in/allegra-anka/" target="_blank"><img src="images/linkedin.svg" class="logos"/></a></li>
-          <li><a href="https://twitter.com/llegsi" target="_blank"><img src="images/twitter.svg" class="logos"/></a></li>
-          <li><a href="mailto:allegra.anka@gmail.com"><img src="images/email.svg" class="logos"/></a></li>
-        </ul>
+    <section class="projects">
+      <h1 class="text-center">Recent Projects</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <p class="text-center">Zimmerman's Deli</p>
+          </div>
+          <div class="col">
+            <p class="text-center">PHLux PHILLY</p>
+          </div>
+        </div>
       </div>
-    </center>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <p class="text-center">Lost City</p>
+          </div>
+          <div class="col">
+            <p class="text-center">Philly Grid</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <ul class="list-unstyled list-inline text-center">
+        <li class="list-inline-item"><a href="https://github.com/allegraanka" target="_blank"><img src="images/github.svg" style="width: 45px;"/></a></li>
+        <li class="list-inline-item"><a href="https://www.linkedin.com/in/allegra-anka/" target="_blank"><img src="images/linkedin.svg" style="width: 45px;"/></a></li>
+        <li class="list-inline-item"><a href="https://twitter.com/llegsi" target="_blank"><img src="images/twitter.svg" style="width: 45px;"/></a></li>
+        <li class="list-inline-item"><a href="mailto:allegra.anka@gmail.com"><img src="images/email.svg" style="width: 45px;"/></a></li>
+      </ul>
+      <p class="text-center">2018 &copy Allegra Anka Portfolio</p>
+    </footer>
 
     <script src="javascripts/scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>
