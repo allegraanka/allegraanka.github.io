@@ -1,3 +1,7 @@
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -14,6 +18,14 @@ section {
   height: 100vh;
 }
 
+section.about {
+  background: #e5e5e5 url("../images/headshot.jpg") no-repeat center fixed;
+  background-size: cover;
+  background-blend-mode: overlay;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
 footer {
   display: flex;
   flex-direction: column;
@@ -21,8 +33,12 @@ footer {
   align-items: center;
   width: 100vw;
   height: 50vh;
-  background: #e5e5e5 url("../images/photo.jpg") no-repeat center;
+  background: #e5e5e5 url("../images/photo.jpg") no-repeat center fixed;
   background-size: cover;
   background-blend-mode: overlay;
   border-top: 1px solid black;
+}
+
+.margin {
+  margin: 2.5%;
 }
