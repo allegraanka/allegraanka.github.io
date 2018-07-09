@@ -7,6 +7,16 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: 'Quattrocento', serif;
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+}
+
+.recent-projects {
+  margin: 5%;
 }
 
 section {
