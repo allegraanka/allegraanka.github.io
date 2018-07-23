@@ -1,5 +1,5 @@
 html, body {
-  overflow-x: hidden;
+  overflow-x: scroll;
 }
 
 body {
@@ -7,48 +7,37 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: 'Quattrocento', serif;
+  font-family: 'Abhaya Libre', serif;
 }
 
 h1 {
-  font-family: 'Oswald', sans-serif;
-  text-transform: uppercase;
-}
-
-.recent-projects {
-  margin: 5%;
+  margin: 3.5%;
 }
 
 section {
+  width: 100vw;
+  height: 100vh;
+}
+
+section.intro {
+  color: white;
+  background-color: #2b2c2d;
+}
+
+section.footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100vw;
   height: 100vh;
-}
-
-section.about {
-  background: #e5e5e5 url("../images/headshot.jpg") no-repeat center fixed;
-  background-size: cover;
-  background-blend-mode: overlay;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-}
-
-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 50vh;
   background: #e5e5e5 url("../images/photo.jpg") no-repeat center fixed;
   background-size: cover;
   background-blend-mode: overlay;
-  border-top: 1px solid black;
+  border-top: 3px solid white;
 }
 
-.margin {
-  margin: 2.5%;
+.pintro {
+  width: 50%;
+  margin-left: 3.5%;
 }
