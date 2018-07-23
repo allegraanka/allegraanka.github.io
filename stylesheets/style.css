@@ -11,7 +11,14 @@ body {
 }
 
 h1 {
+  width: 40%;
   margin: 3.5%;
+  border-bottom: 3px solid white;
+}
+
+.socials {
+  margin-top: 3.5%;
+  margin-left: 3.5%;
 }
 
 section {
