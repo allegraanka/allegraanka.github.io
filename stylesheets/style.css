@@ -31,6 +31,10 @@ section.intro {
   background-color: #2b2c2d;
 }
 
+section.intro p a {
+  color: #5ea7b2 !important;
+}
+
 section.footer {
   display: flex;
   flex-direction: column;
