@@ -1,5 +1,5 @@
 html, body {
-  overflow-x: scroll;
+  overflow-x: hidden;
 }
 
 body {
@@ -7,13 +7,13 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: 'Abhaya Libre', serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 h1 {
-  width: 40%;
+  font-family: 'Montserrat', sans-serif;
+  width: 50%;
   margin: 3.5%;
-  border-bottom: 3px solid white;
 }
 
 .socials {
@@ -47,4 +47,12 @@ section.footer {
 .pintro {
   width: 50%;
   margin-left: 3.5%;
+}
+
+.illustration {
+  max-width: 50%;
+  height: auto;
+  position: absolute;
+  top: 0.5%;
+  right: 2.5%;
 }
