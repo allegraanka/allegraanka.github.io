@@ -16,6 +16,11 @@ h1 {
   margin: 3.5%;
 }
 
+p {
+  font-weight: 600;
+  font-size: 1em;
+}
+
 .socials {
   margin-top: 3.5%;
   margin-left: 3.5%;
@@ -23,7 +28,7 @@ h1 {
 
 section {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 section.intro {
