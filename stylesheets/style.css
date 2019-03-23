@@ -1,67 +1,117 @@
-html, body {
-  overflow-x: hidden;
-}
-
-body {
+.main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: 'Open Sans', sans-serif;
-}
-
-h1 {
-  font-family: 'Montserrat', sans-serif;
-  width: 50%;
-  margin: 3.5%;
-}
-
-p {
-  font-weight: 600;
-  font-size: 1em;
-}
-
-.socials {
-  margin-top: 3.5%;
-  margin-left: 3.5%;
-}
-
-section {
-  width: 100vw;
   min-height: 100vh;
 }
 
-section.intro {
-  color: white;
-  background-color: #2b2c2d;
+.name {
+  font-family: 'Arvo', serif;
+  font-size: 12em;
+  margin-bottom: 0;
 }
 
-section.intro p a {
-  color: #5ea7b2 !important;
+.title {
+  font-family: 'Cutive Mono', monospace;
+  font-size: 4em;
+  text-align: right;
+  margin-top: 0;
 }
 
-section.footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.projects-headline {
+  font-family: 'Arvo', serif;
+  font-size: 12em;
+  margin-bottom: 0;
+  /* margin-top: 0; */
+}
+
+.projects-tagline {
+  font-family: 'Cutive Mono', monospace;
+  font-size: 4em;
+  text-align: right;
+  margin-top: 0;
+}
+
+.footer {
+  font-family: 'Cutive Mono', monospace;
+  width: 100%;
+  margin: 30px 0 30px 0;
+  text-align: center;
+}
+
+/* styling for links */
+a {
+  text-decoration: none;
+  font-family: 'Cutive Mono', monospace;
+}
+
+a:hover {
+  color: #e0337d;
+  text-decoration: line-through;
+}
+
+/* styling for nav bar */
+.nav {
   width: 100vw;
-  height: 100vh;
-  background: #e5e5e5 url("../images/photo.jpg") no-repeat center fixed;
-  background-size: cover;
-  background-blend-mode: overlay;
-  border-top: 3px solid white;
+  position: fixed;
+  top: 35px;
+  display: flex;
+  justify-content: center;
 }
 
-.pintro {
-  width: 50%;
-  margin-left: 3.5%;
+.nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-.illustration {
-  max-width: 50%;
-  height: auto;
-  position: absolute;
-  top: 0.5%;
-  right: 2.5%;
+.nav-list li {
+  display: inline;
+}
+
+/* styling for footer social icons  */
+.list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list li {
+  display: inline;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container {
+    width: 50%;
+    margin: auto 50px;
+    min-height: 50%;
+    background-color: white;
+    padding: 2%;
+}
+
+.content-title {
+    border-bottom: 3px solid #dddddd; 
+}
+
+img {
+    width: 450px;
+    margin: 0 20px 20px 0;
+}
+
+.img-container {
+    position: relative;
+    text-align: center;
+    border: 1px solid #dddddd;
+    margin: 5%;
+    padding: 2%;
+}
+
+.img-container:hover {
+  box-shadow: 10px 5px 5px #333333;
 }
