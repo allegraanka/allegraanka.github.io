@@ -1,117 +1,117 @@
-.main {
+@font-face {
+    font-family: 'wavehaus66_book';
+    src: url('wavehaus-66book-webfont.woff2') format('woff2'),
+         url('wavehaus-66book-webfont.woff') format('woff'),
+         url('wavehaus-66book-webfont.eot') format('embedded-opentype'),
+         url('wavehaus-66book-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  font-family: 'wavehaus66_book', 'Arial', sans-serif;
+}
+/* end-global ------------------------------------------- */
+
+
+/* navigation */
+nav {
+  width: 90%;
+  margin: auto;
+}
+
+.nav-container {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-}
-
-.name {
-  font-family: 'Arvo', serif;
-  font-size: 12em;
-  margin-bottom: 0;
-}
-
-.title {
-  font-family: 'Cutive Mono', monospace;
-  font-size: 4em;
-  text-align: right;
-  margin-top: 0;
-}
-
-.projects-headline {
-  font-family: 'Arvo', serif;
-  font-size: 12em;
-  margin-bottom: 0;
-  /* margin-top: 0; */
-}
-
-.projects-tagline {
-  font-family: 'Cutive Mono', monospace;
-  font-size: 4em;
-  text-align: right;
-  margin-top: 0;
-}
-
-.footer {
-  font-family: 'Cutive Mono', monospace;
-  width: 100%;
-  margin: 30px 0 30px 0;
   text-align: center;
+  justify-content: flex-end;
+  padding: 2%;
+  margin: 2%;
 }
 
-/* styling for links */
+.name-logo {
+  margin-right: auto;
+  font-weight: bolder;
+}
+
+.nav-left-padding {
+  margin-left: 2%;
+}
+/* end-navigation ------------------------------------------- */
+
+
+/* links */
+
 a {
   text-decoration: none;
-  font-family: 'Cutive Mono', monospace;
+}
+/* end-links ------------------------------------------- */
+
+
+/* intro statement container */
+.intro-container {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 5%;
+  padding: 2%;
 }
 
-a:hover {
-  color: #e0337d;
-  text-decoration: line-through;
+.intro-statement {
+  font-size: 6rem;
 }
 
-/* styling for nav bar */
-.nav {
-  width: 100vw;
-  position: fixed;
-  top: 35px;
+.intro-statement:hover {
+  opacity: 0.6;
+}
+/* ------------------------------------------- */
+
+
+/* about section */
+.about-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  min-height: 80vh;
+  width: 60%;
+  margin: auto;
 }
 
-.nav-list {
+.skills-ul-container,
+.about-me {
+  max-width: 250px;
+}
+
+.strong {
+  font-size: 2.2rem;
+  font-weight: bolder;
+}
+
+.mid {
+  font-size: 1.8rem;
+}
+
+.about-me-para {
+  line-height: 125%;
+  font-size: 1.2rem;
+}
+
+.about-me-para:hover {
+  line-height: 150%;
+}
+
+/* end-about ------------------------------------------- */
+
+
+/* footer */
+.footer {
+  padding-bottom: 5%;
+  text-align: center;
+  width: 100vw;
+}
+
+.footer-list {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
 
-.nav-list li {
+.socials {
   display: inline;
 }
-
-/* styling for footer social icons  */
-.list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.list li {
-  display: inline;
-}
-
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.container {
-    width: 50%;
-    margin: auto 50px;
-    min-height: 50%;
-    background-color: white;
-    padding: 2%;
-}
-
-.content-title {
-    border-bottom: 3px solid #dddddd; 
-}
-
-img {
-    width: 450px;
-    margin: 0 20px 20px 0;
-}
-
-.img-container {
-    position: relative;
-    text-align: center;
-    border: 1px solid #dddddd;
-    margin: 5%;
-    padding: 2%;
-}
-
-.img-container:hover {
-  box-shadow: 10px 5px 5px #333333;
-}
+/* end-footer ------------------------------------------- */
