@@ -57,10 +57,16 @@ a {
 
 .intro-statement {
   font-size: 6rem;
+  margin-bottom: 1%;
 }
 
 .intro-statement:hover {
-  opacity: 0.6;
+  color: rgba(102, 69, 232);
+}
+
+.intro-tagline {
+  font-size: 1.2rem;
+  padding-left: 0.5%;
 }
 /* ------------------------------------------- */
 
@@ -79,6 +85,11 @@ a {
   max-width: 250px;
 }
 
+.skills-list-item:hover {
+  color: rgba(102, 69, 232);
+  letter-spacing: 0.5px;
+}
+
 .strong {
   font-size: 2.2rem;
   font-weight: bolder;
@@ -95,6 +106,7 @@ a {
 
 .about-me-para:hover {
   line-height: 150%;
+  color: rgba(102, 69, 232);
 }
 
 /* end-about ------------------------------------------- */
