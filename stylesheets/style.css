@@ -43,6 +43,12 @@ nav {
 
 a {
   text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: rgba(102, 69, 232);
+  text-decoration-line: line-through;
 }
 /* end-links ------------------------------------------- */
 
@@ -108,8 +114,19 @@ a {
   line-height: 150%;
   color: rgba(102, 69, 232);
 }
-
 /* end-about ------------------------------------------- */
+
+
+/* projects page */
+.list-items {
+  width: 100%;
+}
+
+.list-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* end-projects page ------------------------------------------- */
 
 
 /* footer */
