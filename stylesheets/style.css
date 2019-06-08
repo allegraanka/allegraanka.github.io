@@ -59,6 +59,8 @@ a:hover {
   margin: auto;
   margin-bottom: 5%;
   padding: 2%;
+  min-height: 50vh;
+  background-image: url();
 }
 
 .intro-statement {
@@ -80,7 +82,7 @@ a:hover {
 /* about section */
 .about-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   min-height: 80vh;
   width: 60%;
   margin: auto;
@@ -114,6 +116,12 @@ a:hover {
   line-height: 150%;
   color: rgba(102, 69, 232);
 }
+
+.skills-list,
+.about-me {
+  margin-left: 10%;
+  margin-right: 10%;
+}
 /* end-about ------------------------------------------- */
 
 
@@ -134,10 +142,12 @@ a:hover {
   padding-bottom: 5%;
   text-align: center;
   width: 100vw;
+  min-height: 20vh;
 }
 
 .footer-list {
   list-style-type: none;
+  margin-top: 10%;
 }
 
 .socials {
