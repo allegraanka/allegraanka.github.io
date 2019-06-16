@@ -177,3 +177,36 @@ a:hover {
   display: inline;
 }
 /* end-footer ------------------------------------------- */
+
+
+/* mobile */
+@media only screen and (max-width: 600px) {
+    .intro-container {
+      max-width: 90%;
+      margin: auto;
+      text-align: center;
+      margin-top: 5%;
+  }
+
+    .intro-statement {
+      font-size: 3rem;
+      margin-bottom: 1%;
+  }
+
+    .about-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 90%;
+      margin: auto;
+    }
+
+    .skills-list,
+    .about-me {
+      margin-top: 5%;
+    }
+}
+
+
+
+/* end-mobile ------------------------------------------- */
