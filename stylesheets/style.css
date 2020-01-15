@@ -1,3 +1,4 @@
+/* global */
 @font-face {
     font-family: 'wavehaus66_book';
     src: url('wavehaus-66book-webfont.woff2') format('woff2'),
@@ -10,203 +11,92 @@
 
 body {
   font-family: 'wavehaus66_book', 'Arial', sans-serif;
+  background: #201a1f;
 }
+
 /* end-global ------------------------------------------- */
 
 
-/* navigation */
-nav {
-  width: 90%;
-  margin: auto;
-}
+/* main container  */
 
-.nav-container {
+.main-container {
   display: flex;
-  text-align: center;
-  justify-content: flex-end;
-  padding: 2%;
-  margin: 2%;
+  flex-direction: row;
+  justify-content: center;
 }
 
-.name-logo {
-  margin-right: auto;
-  font-weight: bolder;
+.section {
+  width: 30%;
+  align-self: center;
+  padding: 5%;
+  margin: 5% auto;
+  color: #b5dede;
 }
 
-.nav-left-padding {
-  margin-left: 2%;
+#greeting {
+  flex-grow: 2;
 }
-/* end-navigation ------------------------------------------- */
+
+.about-greeting {
+  color: white;
+}
+
+.about-blurb {
+  color: white;
+  font-size: 1rem;
+  line-height: 1.4;
+  margin: 5% auto;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1.4rem;
+}
+
+img.headshot {
+  width: 350px;
+  opacity: 0.8;
+}
+
+.hidden {
+  display: none;
+}
+
+/* end-main-container ------------------------------------------- */
 
 
 /* links */
 
 a {
   text-decoration: none;
-  color: black;
+  color: white;
+  font-weight: bolder;
 }
 
 a:hover {
-  color: rgba(102, 69, 232);
+  color: #b5dede;
   text-decoration-line: line-through;
 }
 /* end-links ------------------------------------------- */
 
 
-/* intro statement container */
-.intro-container {
-  width: 90%;
-  margin: auto;
-  margin-bottom: 5%;
-  padding: 2%;
-  min-height: 25vh;
-  /* background: no-repeat center url("../images/master-wen.jpg");
-  background-size: cover; */
-}
-
-.intro-statement {
-  font-size: 6rem;
-  margin-bottom: 1%;
-}
-
-.intro-statement:hover {
-  color: rgba(102, 69, 232);
-}
-
-.intro-tagline {
-  font-size: 1.2rem;
-  padding-left: 0.5%;
-}
-/* ------------------------------------------- */
-
-
-/* about section */
-.about-container {
-  display: flex;
-  justify-content: space-between;
-  min-height: 35vh;
-  width: 60%;
-  margin: auto;
-}
-
-.skills-ul-container,
-.about-me {
-  max-width: 250px;
-}
-
-.skills-list-item:hover {
-  color: rgba(102, 69, 232);
-  letter-spacing: 0.5px;
-}
-
-.strong {
-  font-size: 2.2rem;
-  font-weight: bolder;
-}
-
-.mid {
-  font-size: 1.8rem;
-}
-
-.about-me-para {
-  line-height: 125%;
-  font-size: 1.2rem;
-}
-
-.about-me-para:hover {
-  line-height: 150%;
-  color: rgba(102, 69, 232);
-}
-
-.skills-list,
-.about-me {
-  margin-left: 10%;
-  margin-right: 10%;
-}
-/* end-about ------------------------------------------- */
-
-
-/* projects page */
-.list-items {
-  width: 100%;
-}
-
-.list-flex {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.project-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.project-grid-item {
- margin: 2.5%;
- padding: 2%;
- border: 2px solid rgba(102, 69, 232);
-}
-
-.image {
-  width: 350px;
-  height: 200px;
-}
-
-.caption-overlay {
-  margin-top: 5px;
-}
-
-/* end-projects page ------------------------------------------- */
-
-
 /* footer */
 .footer {
-  padding-bottom: 5%;
   text-align: center;
   width: 100vw;
   min-height: 10vh;
+  color: white;
 }
 
-.footer-list {
-  list-style-type: none;
-  margin-top: 10%;
-}
-
-.socials {
+.socials-list li {
   display: inline;
+  margin: 10px;
+}
+
+.copyright {
+  margin: 10px auto;
 }
 /* end-footer ------------------------------------------- */
-
-
-/* mobile */
-@media only screen and (max-width: 600px) {
-    .intro-container {
-      max-width: 90%;
-      margin: auto;
-      text-align: center;
-      margin-top: 5%;
-  }
-
-    .intro-statement {
-      font-size: 3rem;
-      margin-bottom: 1%;
-  }
-
-    .about-container {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      width: 90%;
-      margin: auto;
-    }
-
-    .skills-list,
-    .about-me {
-      margin-top: 5%;
-    }
-}
-
-
-
-/* end-mobile ------------------------------------------- */
