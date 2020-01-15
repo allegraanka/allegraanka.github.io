@@ -8,7 +8,6 @@
     <link href="https://fonts.googleapis.com/css?family=Arvo|Cutive+Mono|Lateef" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="stylesheets/reset.css" />
     <link rel="stylesheet" type="text/css" href="stylesheets/style.css"/>
-    <link rel="stylesheet" type="text/css" href="stylesheets/mediaqueries.css" />
 
     <title> Allegra Anka | Portfolio </title>
     <script src="javascripts/scripts.js" type="text/javascript"></script>
@@ -16,75 +15,31 @@
 
   <body>
     <!-- navigation -->
-    <nav>
-      <ul class="nav-container">
-        <!-- <li class="name-logo nav-items"><a href="#">Allegra Anka</a></li> -->
-        <li class="nav-items nav-left-padding"><a href="#">about</a></li>
-        <li class="nav-items nav-left-padding"><a href="#">contact</a></li>
-        <li class="nav-items nav-left-padding"><a href="projects.html">projects</a></li>
-      </ul>
-    </nav>
 
-    <!-- intro section -->
-    <div class="intro-container">
-      <p class="intro-statement">hi, i'm allegra.</p>
-      <p><span class="intro-tagline">i'm a full stack web developer and musician based in philadelphia</span></p>
-    </div>
-
-    <!-- about section -->
-    <div class="about-container">
-      <div class="skills-list">
-        <h4>skills</h4>
-        <br />
-        <div class="skills-ul-container">
-          <ul>
-            <li class="skills-list-item strong">JavaScript</li>
-            <li class="skills-list-item strong">HTML</li>
-            <li class="skills-list-item strong">CSS</li>
-            <li class="skills-list-item mid">Ruby</li>
-            <li class="skills-list-item mid">SQL</li>
-            <li class="skills-list-item mid">React.js</li>
-            <li class="skills-list-item mid">AngularJS</li>
-            <li class="skills-list-item strong">jQuery</li>
-            <li class="skills-list-item mid">p5.js</li>
-            <li class="skills-list-item strong">Bootstrap</li>
-            <li class="skills-list-item mid">Sass</li>
-            <li class="skills-list-item mid">Ruby on Rails</li>
-            <li class="skills-list-item strong">Node.js</li>
-            <li class="skills-list-item mid">MongoDB</li>
-            <li class="skills-list-item mid">Mongoose</li>
-            <li class="skills-list-item mid">Git</li>
-            <li class="skills-list-item strong">GitHub</li>
-          </ul>
-        </div>
+    <!-- main section -->
+    <div class="main-container">
+      <div class="section">
+        <img src="images/headshot.jpg" class="headshot"/>
       </div>
-      <div class="about-me">
-        <h4>passion</h4>
-        <br />
-        <p class="about-me-para">
-          When I finally decide to go, I go hard.
-          I enjoy thinking critically, creatively, and collaboratively through a problem.
-          I'm interested in user experience and building smart, clean interfaces.
-          I love JavaScript and I'm currently learning React.
-          I work as a client-facing engineer at <a href="https://piano.io/">Piano</a>, doing implementation projects for a large range of distinguished clients.
-          When I'm not writing code, I'm playing music or going to shows.
-          And yes, I love cats.
-        </p>
+      <div id="greeting" class="section">
+        <h1 class="hidden"> hi, i'm allegra. </h1>
+        <p class="hidden about-greeting"> i'm a web developer and musician living in philadelphia. </p>
+        <p class="hidden about-blurb"> i work as an engineer on the client services team at <a href="https://piano.io/">piano</a>, serving as the main technical lead on implementation projects for a range of exciting clients. i write in JavaScript. i'm open to new opportunities that will allow me to focus solely on development. </p>
       </div>
     </div>
-
-    <!-- contact section -->
 
     <!-- footer section -->
     <div class="footer">
-      <ul class="footer-list">
-        <li class="socials"><a href="https://github.com/allegraanka" target="_blank"><img src="images/github.svg" style="width: 30px;"/></a></li>
-        <li class="socials"><a href="https://www.linkedin.com/in/allegra-anka/" target="_blank"><img src="images/linkedin.svg" style="width: 30px;"/></a></li>
-        <li class="socials"><a href="https://twitter.com/llegsi" target="_blank"><img src="images/twitter.svg" style="width: 30px;"/></a></li>
-        <li class="socials"><a href="mailto:allegra.anka@gmail.com"><img src="images/email.svg" style="width: 30px;"/></a></li>
+      <ul class="socials-list">
+        <li><a href="#"><img src="images/linkedin.png" /></a></li>
+        <li><a href="#"><img src="images/twitter.png" /></a></li>
+        <li><a href="#"><img src="images/github.png" /></a></li>
       </ul>
-      <p class="copyright"><a href="https://github.com/allegraanka">@llegsi</a> portfolio &copy2019</p>
-      <!-- <p class="photo-cred">Photo by <a href="#">Master Wen</a> on <a href="#">Unsplash</a></p> -->
+      <p class="copyright"><a href="https://github.com/allegraanka">@llegsi</a> &copy2020</p>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="javascripts/scripts.js"></script>
   </body>
 </html>
