@@ -11,7 +11,7 @@
 
 body {
   font-family: 'wavehaus66_book', 'Arial', sans-serif;
-  background: #201a1f;
+  background: #151515;
 }
 
 /* end-global ------------------------------------------- */
@@ -23,6 +23,8 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  border-right: 2px solid white;
+  border-left: 2px solid white;
 }
 
 .section {
@@ -52,6 +54,10 @@ h1 {
   font-size: 3rem;
 }
 
+h2 {
+  font-size: 1.8rem;
+}
+
 p {
   font-size: 1.4rem;
 }
@@ -67,6 +73,39 @@ img.headshot {
 
 /* end-main-container ------------------------------------------- */
 
+/* banner-sample-container  */
+
+.banner-sample-container {
+  height: 50vh;
+  background-color: #b5dede;
+  border-right: 2px solid white;
+  border-left: 2px solid white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* end-banner-sample-container ------------------------------------------- */
+
+/* banner-contact-container  */
+
+.banner-contact-container {
+  height: 75vh;
+  background: no-repeat fixed bottom url("../images/bass.jpg");
+  mix-blend-mode: overlay;
+  color: white;
+  border-bottom: 2px solid #b5dede;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.col {
+  padding: 2.5%;
+  margin: 2.5%;
+}
+
+/* end-banner-contact-container ------------------------------------------- */
 
 /* links */
 
@@ -86,8 +125,8 @@ a:hover {
 /* footer */
 .footer {
   text-align: center;
-  width: 100vw;
   min-height: 10vh;
+  padding: 2.5%;
   color: white;
 }
 
