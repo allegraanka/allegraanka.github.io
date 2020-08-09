@@ -126,14 +126,10 @@ a:hover {
   }
 
   ._section-2 {
-    height: 80vh;
-    background: url(../images/quino-al-unsplash.jpg) no-repeat fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    height: 55vh;
     display: flex;
     flex-direction: column;
+    background: white;
   }
 
   ._reach-out {
@@ -143,7 +139,10 @@ a:hover {
 
   ._socials-list {
     list-style-type: none;
-    margin: 30% 10% 5% 45%;
+  }
+
+  ._socials-list-item {
+    font-size: 2.6rem;
   }
 
   ._about-me {
