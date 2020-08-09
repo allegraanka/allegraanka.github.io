@@ -1,104 +1,45 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Arvo|Cutive+Mono|Lateef" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="stylesheets/reset.css" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/style.css"/>
-
-    <title> Allegra Anka | Portfolio </title>
-    <script src="javascripts/scripts.js" type="text/javascript"></script>
-  </head>
-
-  <body>
-    <!-- navigation -->
-
-    <!-- main section -->
-    <div class="main-container">
-      <div class="section">
-        <img src="images/headshot.jpg" class="headshot"/>
-      </div>
-      <div id="greeting" class="section">
-        <h1 class="hidden"> hi, i'm allegra. </h1>
-        <p class="hidden about-greeting"> i'm a web developer and musician living in philadelphia. </p>
-        <p class="hidden about-blurb"> i work as an engineer on the client services team at <a href="https://piano.io/">piano</a>. i serve as a technical lead and solutions consultant on implementation projects for a range of exciting clients. i write in JavaScript, React, Node.js. i enjoy collaboration and being part of a team. i have extensive experience working directly with clients. i'm always open to new opportunities that will allow me to focus solely on development. when i'm not coding, i'm usually playing music or going to shows. and yes, i love cats. </p>
-      </div>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;500;800&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="stylesheets/style.css" />
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+  <title>allegra anka | portfolio</title>
+</head>
+<body>
+  <div class="_section-1">
+    <div class="_greeting-container">
+      <span class="_greeting">hi, i'm allegra.</span>
     </div>
-
-    <!-- first banner -->
-    <div class="banner-sample-container">
-      <div class="sample">
-        <a href="https://allegraanka.github.io/wthr-splsh/" target="_blank"><img src="images/wthrsplsh.png" class="sample-img" /></a>
-        <p>wthr-splsh</p>
-        <p>Chrome extension ft. Dark Sky API</p>
-      </div>
-      <div class="sample">
-        <a href="https://allegraanka.github.io/wthr-splsh/" target="_blank"><img src="images/wthrsplsh.png"
-            class="sample-img" /></a>
-        <p>wthr-splsh</p>
-        <p>Chrome extension ft. Dark Sky API</p>
-      </div>
-      <div class="sample">
-        <a href="https://allegraanka.github.io/wthr-splsh/" target="_blank"><img src="images/wthrsplsh.png"
-            class="sample-img" /></a>
-        <p>wthr-splsh</p>
-        <p>Chrome extension ft. Dark Sky API</p>
-      </div>
+    <div class="_about-me-container">
+      <p class="_about-me">
+        i'm a web developer and musician living in philadelphia. 
+        i write primarily in JavaScript and React. 
+        learning Python and writing an instrumental EP are on deck for me.
+        i'm particularly interested in user experience, interaction design, and product development, and growing in these areas.
+        when i'm not coding, or <a href="https://medium.com/@allegra.anka" target="_blank" class="_link">writing</a> about coding, i'm usually making music or reading dystopian sci-fi.
+        and yes, i do love cats.
+      </p>
     </div>
-
-    <!-- second banner  -->
-    <div class="banner-contact-container">
-      <div class="col">
-        <h2>skills</h2>
-        <ul>
-          <li>JavaScript</li>
-          <li>HTML5</li>
-          <li>CSS3</li>
-          <li>React</li>
-          <li>MongoDB</li>
-          <li>Mongoose</li>
-          <li>Git</li>
-          <li>Bootstrap</li>
-          <li>Sass</li>
-          <li>Node.js</li>
-          <li>Express</li>
-          <li>Sequelize</li>
-        </ul>
-      </div>
-      <!-- <div class="col">
-        <h2>education</h2>
-        <ul>
-          <li>BA linguistics & cog sci</li>
-          <li>NYCDA - full stack coding bootcamp</li>
-          <li>Penn LPS full stack JavaScript coding bootcamp</li>
-        </ul>
-      </div> -->
-      <div class="col">
-        <h2>contact</h2>
-        <ul>
-          <li><a href="https://www.linkedin.com/in/allegra-anka">LinkedIn</a></li>
-          <li><a href="https://twitter.com/llegsi">Twitter</a></li>
-          <li><a href="https://twitter.com/llegsi">Github</a></li>
-          <li><a href="mailto:allegra.anka@gmail.com">allegra.anka@gmail.com</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- footer section -->
-    <div class="footer">
-      <ul class="socials-list">
-        <li><a href="https://www.linkedin.com/in/allegra-anka"><img src="images/linkedin.png" /></a></li>
-        <li><a href="https://twitter.com/llegsi"><img src="images/twitter.png" /></a></li>
-        <li><a href="c"><img src="images/github.png" /></a></li>
-      </ul>
-      <p class="copyright"><a href="https://github.com/allegraanka">@llegsi</a> &copy2020</p>
-    </div>
-
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="javascripts/scripts.js"></script>
-  </body>
+  </div>
+  <div class="_section-2">
+    <span class="_reach-out">reach out.</span>
+    <ul class="_socials-list">
+      <li class="_socials-list-item"><a class="_link" href="mailto:allegra.anka@gmail.com">email</a></li>
+      <li class="_socials-list-item"><a class="_link" href="https://github.com/allegraanka">github</a></li>
+      <li class="_socials-list-item"><a class="_link" href="https://www.linkedin.com/in/allegra-anka/">linkedin</a></li>
+      <li class="_socials-list-item"><a class="_link" href="https://medium.com/@allegra.anka">medium</a></li>
+      <li class="_socials-list-item"><a class="_link" href="https://www.instagram.com/llegsi/">instagram</a></li>
+      <li class="_socials-list-item"><a class="_link" href="https://twitter.com/llegsi">twitter</a></li>
+    </ul>
+  </div>
+  <div class="_footer">
+    <span class="_thanks-footer">thanks for stopping by.</span>
+  </div>
+  <script src="javascripts/scripts.js"></script>
+</body>
 </html>

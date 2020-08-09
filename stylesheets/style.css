@@ -1,145 +1,107 @@
 /* global */
 @font-face {
-    font-family: 'wavehaus66_book';
-    src: url('wavehaus-66book-webfont.woff2') format('woff2'),
-         url('wavehaus-66book-webfont.woff') format('woff'),
-         url('wavehaus-66book-webfont.eot') format('embedded-opentype'),
-         url('wavehaus-66book-webfont.ttf') format('truetype');
+    font-family: 'Anonymous Pro';
+    src: url('fonts/anon_pro.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
+/* html { 
+  background: url(../images/drew-beamer-unsplash.jpg) #16161a no-repeat fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: right;
+  background-blend-mode: overlay;
+} */
+
 body {
-  font-family: 'wavehaus66_book', 'Arial', sans-serif;
-  background: #151515;
+  font-family: 'Anonymous Pro', 'Arial', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+a:link {
+  color: #7f5af0;
+}
+
+a:visited {
+  color: #94a1b2;
+}
+
+a:focus {
+  background: #7f5af0;
+  color: #fffffe;
+}
+
+a:hover {
+  text-decoration: line-through;
 }
 
 /* end-global ------------------------------------------- */
 
-
-/* main container  */
-
-.main-container {
+._section-1 {
+  height: 100vh;
+  background: #16161a;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  border-right: 2px solid white;
-  border-left: 2px solid white;
+  flex-direction: column;
+  border-bottom: 1px solid #7f5af0;
 }
 
-.section {
-  width: 30%;
-  align-self: center;
-  padding: 5%;
-  margin: 5% auto;
-  color: #b5dede;
+._greeting-container {
+  margin: 10% 2.5% 2.5% 10%;
 }
 
-#greeting {
-  flex-grow: 2;
+._greeting {
+  font-size: 4rem;
+  color: #fffffe;
 }
 
-.about-greeting {
-  color: white;
+._about-me {
+  font-size: 1.2rem;
+  color: #fffffe;
+  margin: 2.5% 2.5% 2.5% 10%;
+  width: 50%;
+  line-height: 175%;
 }
 
-.about-blurb {
-  color: white;
-  font-size: 1rem;
-  line-height: 1.4;
-  margin: 5% auto;
+._section-2 {
+  height: 100vh;
+  background: url(../images/quino-al-unsplash.jpg) no-repeat center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
 }
 
-h1 {
-  font-size: 3rem;
+._reach-out {
+  margin: 10% 2.5% 2.5% 20%;
+  font-size: 4rem;
 }
 
-h2 {
+._socials-list {
+  list-style-type: none;
+  margin: 0 0 0 20%;
+}
+
+._socials-list-item {
   font-size: 1.8rem;
 }
 
-p {
-  font-size: 1.4rem;
-}
-
-img.headshot {
-  width: 350px;
-  opacity: 0.8;
-}
-
-.hidden {
-  display: none;
-}
-
-.sample-img {
-  width: 300px;
-}
-
-/* end-main-container ------------------------------------------- */
-
-/* banner-sample-container  */
-
-.banner-sample-container {
+._footer {
   height: 50vh;
-  background-color: #b5dede;
-  border-right: 2px solid white;
-  border-left: 2px solid white;
+  background: #16161a;
+  color: #fffffe;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
 }
 
-/* end-banner-sample-container ------------------------------------------- */
-
-/* banner-contact-container  */
-
-.banner-contact-container {
-  height: 75vh;
-  background: no-repeat fixed bottom url("../images/bass.jpg");
-  mix-blend-mode: overlay;
-  color: white;
-  border-bottom: 2px solid #b5dede;
-  display: flex;
-  justify-content: start;
-  align-items: center;
+._thanks-footer {
+  margin: 10% 2.5% 2.5% 10%;
+  font-size: 4rem;
 }
-
-.col {
-  padding: 2.5%;
-  margin: 2.5%;
-}
-
-/* end-banner-contact-container ------------------------------------------- */
-
-/* links */
-
-a {
-  text-decoration: none;
-  color: white;
-  font-weight: bolder;
-}
-
-a:hover {
-  color: #b5dede;
-  text-decoration-line: line-through;
-}
-/* end-links ------------------------------------------- */
-
-
-/* footer */
-.footer {
-  text-align: center;
-  min-height: 10vh;
-  padding: 2.5%;
-  color: white;
-}
-
-.socials-list li {
-  display: inline;
-  margin: 10px;
-}
-
-.copyright {
-  margin: 10px auto;
-}
-/* end-footer ------------------------------------------- */
