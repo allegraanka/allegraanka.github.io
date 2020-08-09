@@ -105,3 +105,66 @@ a:hover {
   margin: 10% 2.5% 2.5% 10%;
   font-size: 4rem;
 }
+
+@media screen and (max-width: 600px) {
+  ._section-1 {
+    height: 80vh;
+    background: #16161a;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #7f5af0;
+  }
+
+  ._greeting-container {
+    width: 95%;
+    margin: 10% 2.5%;
+  }
+
+  ._greeting {
+    font-size: 3rem;
+    color: #fffffe;
+  }
+
+  ._section-2 {
+    height: 80vh;
+    background: url(../images/quino-al-unsplash.jpg) no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+  }
+
+  ._reach-out {
+    margin: 5% 2.5%;
+    font-size: 3rem;
+  }
+
+  ._socials-list {
+    list-style-type: none;
+    margin: 30% 10% 5% 45%;
+  }
+
+  ._about-me {
+    font-size: 1.2rem;
+    color: #fffffe;
+    width: 95%;
+    margin: 5% 2.5%;
+    line-height: 175%;
+}
+
+  ._footer {
+    height: 20vh;
+    background: #16161a;
+    color: #fffffe;
+    display: flex;
+    justify-content: center;
+  }
+  
+  ._thanks-footer {
+    margin: 2.5% auto;
+    font-size: 2rem;
+    align-self: center;
+  }
+}
