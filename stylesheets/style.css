@@ -42,6 +42,10 @@ a:hover {
   text-decoration: line-through;
 }
 
+.white-font {
+  color: #fffffe;
+}
+
 /* end-global ------------------------------------------- */
 
 ._section-1 {
@@ -52,7 +56,8 @@ a:hover {
   border-bottom: 1px solid #7f5af0;
 }
 
-._greeting-container {
+._greeting-container,
+._sessionURL-container {
   margin: 10% 2.5% 2.5% 10%;
 }
 
