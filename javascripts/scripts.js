@@ -1,5 +1,6 @@
 const sessionUrlInjection = document.getElementById("sessionURL-injection");
 
+
 FS("observe", {
   type: "start",
   callback: () => {
@@ -15,8 +16,18 @@ FS("observe", {
     const sessionURL = FS("getSession");
     sessionURL ? console.log(sessionURL) : console.log('No current session.');
     // clear browser cookies
+    deleteCookie('fs_uid');
   },
 });
+
+function deleteCookie(name, path = "/", domain = "") {
+  console.log('Cookie name: ' + name, 'Cookie path: ' + path, 'Cookie domain: ' + domain);
+  document.cookie =
+    name +
+    "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=" +
+    path +
+    (domain ? "; domain=" + domain : "");
+}
 
 // Pull Segment anonymousId off the browser
 /*
