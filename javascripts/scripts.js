@@ -9,6 +9,15 @@ FS("observe", {
   },
 });
 
+FS("observe", {
+  type: "shutdown",
+  callback: () => {
+    const sessionURL = FS("getSession");
+    sessionURL ? console.log(sessionURL) : console.log('No current session.');
+    // clear browser cookies
+  },
+});
+
 // Pull Segment anonymousId off the browser
 /*
 function getSegmentAnonymousIds(name) {
