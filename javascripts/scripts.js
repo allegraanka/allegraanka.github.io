@@ -8,6 +8,7 @@ FS("observe", {
     const sessionURL = FS("getSession", { format: "url" });
     console.log(sessionURL);
     sessionUrlInjection.innerHTML = sessionURL;
+    sessionUrlInjection.href = sessionURL;
   },
 });
 
