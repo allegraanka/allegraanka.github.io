@@ -13,17 +13,26 @@
 <body>
   <div class="_section-1">
     <div class="_greeting-container">
-      <span class="_greeting">FS Test Landing</span>
+      <span class="_greeting fs-unmask">FS Test Landing</span>
     </div>
 
-    <div>
-      <button id='startCapture' class='fs-unmask'>Start FS Data Capture</button>
+    <div class="_button-container">
+      <button id='startCapture' class='fs-unmask'>FS('start')</button>
+      <button id='shutdownCapture' class='fs-unmask'>FS('shutdown')</button>
     </div>
 
-    <div class="_sessionURL-container white-font">
-      Current session URL: <a id="sessionURL-injection" target="_blank" href=""></a>
+    <div class="_org-details-container fs-unmask">
+      <div>
+        Org ID: <span id="displayOrgId"></span>
+      </div>
+      <div class="fs-unmask">
+        Current session URL: 
+        <span id="sessionURL-label"></span>
+        <a id="sessionURL-injection" target="_blank" href=""></a>
+      </div>
     </div>
   </div>
+
 
   <!-- Fullstory snippet, 2.0.0 -->
   <script>

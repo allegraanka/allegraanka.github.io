@@ -1,14 +1,25 @@
 const sessionUrlInjection = document.getElementById("sessionURL-injection");
+const sessionUrlLabel = document.getElementById("sessionURL-label");
 const startCapture = document.getElementById("startCapture");
+const shutdownCapture = document.getElementById("shutdownCapture");
+const orgId = document.getElementById("displayOrgId");
 
+window._fs_org ? orgId.innerHTML = window._fs_org : orgId.innerHTML = 'No org ID.';
+sessionUrlLabel.innerHTML = 'No session URL, not capturing.';
 
 FS("observe", {
   type: "start",
   callback: () => {
     const sessionURL = FS("getSession", { format: "url" });
-    console.log(sessionURL);
-    sessionUrlInjection.innerHTML = sessionURL;
-    sessionUrlInjection.href = sessionURL;
+    if (sessionURL) {
+      console.log(sessionURL);
+      sessionUrlLabel.innerHTML = '';
+      sessionUrlInjection.href = sessionURL;
+      sessionUrlInjection.innerHTML = "Session URL";
+    } else {
+      console.log('Not capturing');
+      sessionUrlLabel.innerHTML = 'No session URL, not capturing.'; 
+    }
   },
 });
 
@@ -16,7 +27,16 @@ FS("observe", {
   type: "shutdown",
   callback: () => {
     const sessionURL = FS("getSession");
-    sessionURL ? console.log(sessionURL) : console.log('No current session.');
+    if (sessionURL) {
+      console.log(sessionURL);
+      sessionUrlLabel.innerHTML = "";
+      sessionUrlInjection.href = sessionURL;
+      sessionUrlInjection.innerHTML = "Session URL";
+    } else {
+      console.log("Not capturing.");
+      sessionUrlLabel.innerHTML = "No session URL, not capturing.";
+      sessionUrlInjection.innerHTML = "";
+    }
     // clear browser cookies
     // deleteCookie('fs_uid');
   },
@@ -26,6 +46,11 @@ FS("observe", {
 startCapture.addEventListener('click', () => {
   FS('start');
 });
+
+// Shutdown Fullstory Data Capture
+shutdownCapture.addEventListener('click', () => {
+  FS('shutdown');
+})
 
 // function deleteCookie(name, path = "/", domain = "") {
 //   console.log('Cookie name: ' + name, 'Cookie path: ' + path, 'Cookie domain: ' + domain);

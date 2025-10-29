@@ -1,10 +1,4 @@
 /* global */
-@font-face {
-    font-family: 'Anonymous Pro';
-    src: url('fonts/anon_pro.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
 
 /* html { 
   background: url(../images/drew-beamer-unsplash.jpg) #16161a no-repeat fixed; 
@@ -35,43 +29,55 @@ a:visited {
 
 a:focus {
   background: #7f5af0;
-  color: #fffffe;
 }
 
 a:hover {
   text-decoration: line-through;
 }
 
-.white-font {
-  color: #fffffe;
+/* end-global ------------------------------------------- */
+
+._greeting-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1%;
+  margin: 1%;
 }
 
-/* end-global ------------------------------------------- */
+._button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+._org-details-container {
+  width: 50%;
+  padding: 1%;
+  margin: 1% 0;
+}
+
+#startCapture,
+#shutdownCapture {
+  height: 30px;
+  padding: 4px 20px;
+  margin: 0 5px;
+  background: white;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 2px 2px 12px rgba(17, 12, 46, 0.15);
+}
 
 ._section-1 {
   height: 100vh;
-  background: #16161a;
+  padding: 2%;
   display: flex;
   flex-direction: column;
   border-bottom: 1px solid #7f5af0;
 }
 
-._greeting-container,
-._sessionURL-container {
-  margin: 10% 2.5% 2.5% 10%;
-}
-
 ._greeting {
   font-size: 4rem;
-  color: #fffffe;
-}
-
-._about-me {
-  font-size: 1.2rem;
-  color: #fffffe;
-  margin: 2.5% 2.5% 2.5% 10%;
-  width: 50%;
-  line-height: 175%;
 }
 
 ._section-2 {
@@ -83,92 +89,4 @@ a:hover {
   background-size: cover;
   display: flex;
   flex-direction: column;
-}
-
-._reach-out {
-  margin: 10% 2.5% 2.5% 20%;
-  font-size: 4rem;
-}
-
-._socials-list {
-  list-style-type: none;
-  margin: 0 0 0 20%;
-}
-
-._socials-list-item {
-  font-size: 1.8rem;
-}
-
-._footer {
-  height: 50vh;
-  background: #16161a;
-  color: #fffffe;
-  display: flex;
-}
-
-._thanks-footer {
-  margin: 10% 2.5% 2.5% 10%;
-  font-size: 4rem;
-}
-
-@media screen and (max-width: 600px) {
-  ._section-1 {
-    height: 80vh;
-    background: #16161a;
-    display: flex;
-    flex-direction: column;
-    border-bottom: 1px solid #7f5af0;
-  }
-
-  ._greeting-container {
-    width: 95%;
-    margin: 10% 2.5%;
-  }
-
-  ._greeting {
-    font-size: 3rem;
-    color: #fffffe;
-  }
-
-  ._section-2 {
-    height: 65vh;
-    display: flex;
-    flex-direction: column;
-    background: white;
-  }
-
-  ._reach-out {
-    margin: 5% 2.5%;
-    font-size: 3rem;
-  }
-
-  ._socials-list {
-    list-style-type: none;
-  }
-
-  ._socials-list-item {
-    font-size: 2.6rem;
-  }
-
-  ._about-me {
-    font-size: 1.2rem;
-    color: #fffffe;
-    width: 95%;
-    margin: 5% 2.5%;
-    line-height: 175%;
-}
-
-  ._footer {
-    height: 20vh;
-    background: #16161a;
-    color: #fffffe;
-    display: flex;
-    justify-content: center;
-  }
-  
-  ._thanks-footer {
-    margin: 2.5% auto;
-    font-size: 2rem;
-    align-self: center;
-  }
 }
