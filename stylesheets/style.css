@@ -57,8 +57,7 @@ a:hover {
   margin: 1% 0;
 }
 
-#startCapture,
-#shutdownCapture {
+.button {
   height: 30px;
   padding: 4px 20px;
   margin: 0 5px;
