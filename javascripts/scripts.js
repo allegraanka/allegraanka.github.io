@@ -5,8 +5,13 @@ const anonymize = document.getElementById("anonymize");
 const identify = document.getElementById("identify");
 const shutdownCapture = document.getElementById("shutdownCapture");
 const orgId = document.getElementById("displayOrgId");
+const fsSnippetVersion = document.getElementById("fsSnippetVersion");
+const fsLoaded = document.getElementById("fsLoaded");
 
 window._fs_org ? orgId.innerHTML = window._fs_org : orgId.innerHTML = 'No org ID.';
+window.FS?._v ? fsSnippetVersion.innerHTML = window.FS._v : fsSnippetVersion.innerHTML = 'No snippet version.';
+window.FS?._fs_loaded ? fsLoaded.innerHTML = window.FS._fs_loaded : fsLoaded.innerHTML = 'Fullstory isn\'t initialized on this page.';
+
 sessionUrlLabel.innerHTML = 'No session URL, not capturing.';
 
 FS("observe", {
