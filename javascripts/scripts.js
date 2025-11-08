@@ -127,3 +127,29 @@ function getSegmentAnonymousIds(name) {
 let segmentAnonymousIds = getSegmentAnonymousIds('ajs_anonymous_id');
 console.log(segmentAnonymousIds);
 */
+
+// Calculator code
+
+const calculator = document.querySelector(".calculator_container");
+const answerDisplayButton = document.querySelector(".answer-display");
+const clearButton = document.querySelector(".clear");
+const backspaceButton = document.querySelector(".backspace");
+const divideButton = document.querySelector(".divide");
+const sevenButton = document.querySelector(".seven");
+const eightButton = document.querySelector(".eight");
+const nineButton = document.querySelector(".nine");
+const multButton = document.querySelector(".mult");
+const fourButton = document.querySelector(".four");
+const fiveButton = document.querySelector(".five");
+const sixButton = document.querySelector(".six");
+const subtrButton = document.querySelector(".subtr");
+const oneButton = document.querySelector(".one");
+const twoButton = document.querySelector(".two");
+const threeButton = document.querySelector(".three");
+const additButton = document.querySelector(".addit");
+const zilButton = document.querySelector(".zil");
+const equalsButton = document.querySelector(".equals");
+
+calculator.addEventListener("click", (e) => {
+  console.log(e.target.innerText);
+});

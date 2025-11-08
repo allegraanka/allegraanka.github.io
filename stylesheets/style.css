@@ -75,17 +75,140 @@ a:hover {
   border-bottom: 1px solid #7f5af0;
 }
 
+._section-2 {
+  height: 100vh;
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 ._greeting {
   font-size: 4rem;
 }
 
-._section-2 {
-  height: 70vh;
-  background: url(../images/quino-al-unsplash.jpg) no-repeat center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+.answer-display {
+  grid-area: answer-display;
+  background-color: black;
+  color: white;
+  width: auto;
+  height: 30px;
+  padding: 20px;
+  border: 0.5px solid black;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.clear {
+  grid-area: clear;
+  background-color: lightgray;
+}
+
+.backspace {
+  grid-area: backspace;
+  background-color: lightgray;
+}
+
+.divide {
+  grid-area: divide;
+  background-color: orange;
+}
+
+.seven {
+  grid-area: seven;
+  background-color: lightgray;
+}
+
+.eight {
+  grid-area: eight;
+  background-color: lightgray;
+}
+
+.nine {
+  grid-area: nine;
+  background-color: lightgray;
+}
+
+.mult {
+  grid-area: mult;
+  background-color: orange;
+}
+
+.four {
+  grid-area: four;
+  background-color: lightgray;
+}
+
+.five {
+  grid-area: five;
+  background-color: lightgray;
+}
+
+.six {
+  grid-area: six;
+  background-color: lightgray;
+}
+
+.subtr {
+  grid-area: subtr;
+  background-color: orange;
+}
+
+.one {
+  grid-area: one;
+  background-color: lightgray;
+}
+
+.two {
+  grid-area: two;
+  background-color: lightgray;
+}
+
+.three {
+  grid-area: three;
+  background-color: lightgray;
+}
+
+.addit {
+  grid-area: addit;
+  background-color: orange;
+}
+
+.zil {
+  grid-area: zil;
+  background-color: lightgray;
+}
+
+.equals {
+  grid-area: equals;
+  background-color: orange;
+}
+
+.calculator_container {
+  width: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+  "answer-display answer-display answer-display answer-display"
+  "clear clear backspace divide"
+  "seven eight nine mult"
+  "four five six subtr"
+  "one two three addit"
+  "zil zil zil equals";
+}
+
+.calc-button {
+  width: auto;
+  height: 30px;
+  padding: 20px;
+  border: 0.5px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calc-button:hover {
+  opacity: 0.8;
 }
