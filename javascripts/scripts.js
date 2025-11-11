@@ -131,7 +131,7 @@ console.log(segmentAnonymousIds);
 // Calculator code
 
 const calculator = document.querySelector(".calculator_container");
-const answerDisplayButton = document.querySelector(".answer-display");
+let answerDisplay = document.querySelector(".answer-display");
 const clearButton = document.querySelector(".clear");
 const backspaceButton = document.querySelector(".backspace");
 const divideButton = document.querySelector(".divide");
@@ -150,6 +150,105 @@ const additButton = document.querySelector(".addit");
 const zilButton = document.querySelector(".zil");
 const equalsButton = document.querySelector(".equals");
 
+let firstInputNumber = "";
+let secondInputNumber = "";
+let operator = null;
+
 calculator.addEventListener("click", (e) => {
-  console.log(e.target.innerText);
+  if (operator === null) {
+    if (
+      !(
+        e.target === divideButton ||
+        e.target === multButton ||
+        e.target === subtrButton ||
+        e.target === additButton ||
+        e.target === equalsButton ||
+        e.target === clearButton
+      )
+    ) {
+      firstInputNumber += e.target.innerText;
+      firstInputNumber = parseInt(firstInputNumber);
+      answerDisplay.innerText = firstInputNumber;
+    }
+  } else {
+    if (
+      !(
+        e.target === divideButton ||
+        e.target === multButton ||
+        e.target === subtrButton ||
+        e.target === additButton ||
+        e.target === equalsButton ||
+        e.target === clearButton
+      )
+    ) {
+      secondInputNumber += e.target.innerText;
+      secondInputNumber = parseInt(secondInputNumber);
+      answerDisplay.innerText = secondInputNumber;
+    }
+  }
+
+  if (e.target === divideButton) {
+    operator = 'divide';
+    answerDisplay.innerText = '/';
+  }
+
+  if (e.target === multButton) {
+    operator = 'multiply';
+    answerDisplay.innerText = '*';
+  }
+
+  if (e.target === subtrButton) {
+    operator = 'subtract';
+    answerDisplay.innerText = '-';
+  }
+
+  if (e.target === additButton) {
+    operator = 'add';
+    answerDisplay.innerText = '+';
+  }
+
+  if (e.target === answerDisplay) {
+    e.preventDefault;
+  }
+
+  if (e.target === clearButton) {
+    answerDisplay.innerText = "0";
+    firstInputNumber = "";
+    secondInputNumber = "";
+    operator = null;
+  }
+
+  if (e.target === equalsButton) {
+    console.log('entering equals button territory!');
+    switch (operator) {
+      case 'divide':
+        answerDisplay.innerText = divideNumbers(firstInputNumber, secondInputNumber);
+      break;
+      case 'multiply':
+        answerDisplay.innerText = multiplyNumbers(firstInputNumber, secondInputNumber);
+      break;
+      case 'subtract':
+        answerDisplay.innerText = subtrNumbers(firstInputNumber, secondInputNumber);
+      break;
+      case 'add':
+        answerDisplay.innerText = addNumbers(firstInputNumber, secondInputNumber);
+      break;
+    }
+  }
 });
+
+function addNumbers(a,b) {
+  return a + b;
+}
+
+function subtrNumbers(a, b) {
+  return a - b;
+}
+
+function multiplyNumbers(a, b) {
+  return a * b;
+}
+
+function divideNumbers(a, b) {
+  return a / b;
+}
