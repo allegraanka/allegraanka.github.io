@@ -10,36 +10,45 @@
 </head>
 
 <body>
-    <div class="_section-1">
-        <div class="_greeting-container">
-            <span class="_greeting fs-unmask fs-ignore-rage-clicks">FS About Page</span>
-        </div>
+  <nav class="navbar">
+    <a href="index.html" class="navLink">Home</a>
+    <a href="calculator.html" class="navLink">Calculator</a>
+    <a href="#" class="navLink">Page3</a>
+  </nav>
 
-        <div class="_button-container">
-            <button id='startCapture' class='button fs-unmask'>FS('start')</button>
-            <button id='anonymize' class='button fs-unmask'>Anonymize</button>
-            <button id='shutdownCapture' class='button fs-unmask'>FS('shutdown')</button>
-            <button id='identify' class='button fs-unmask'>FS('setIdentity')</button>
-        </div>
+  <div class="_section-1">
+      <div class="_greeting-container">
+          <span class="_greeting fs-unmask fs-ignore-rage-clicks">FS About Page</span>
+      </div>
 
+      <div class="_button-container">
+          <button id='startCapture' class='button fs-unmask'>FS('start')</button>
+          <button id='anonymize' class='button fs-unmask'>Anonymize</button>
+          <button id='shutdownCapture' class='button fs-unmask'>FS('shutdown')</button>
+          <button id='identify' class='button fs-unmask'>FS('setIdentity')</button>
+      </div>
+
+      <div class="_org-details-section">
         <div class="_org-details-container fs-unmask">
-            <div>
-                Org ID: <span id="displayOrgId"></span>
-            </div>
-            <div>
-                FS Snippet Version: <span id="fsSnippetVersion"></span>
-            </div>
-            <div>
-                FS Loaded: <span id="fsLoaded"></span>
-            </div>
-
-            <div class="fs-unmask">
-                Current session URL:
-                <span id="sessionURL-label"></span>
-                <a id="sessionURL-injection" target="_blank" href=""></a>
-            </div>
+          <div>
+            Org ID: <span id="displayOrgId"></span>
+          </div>
+          <div>
+            FS Snippet Version: <span id="fsSnippetVersion"></span>
+          </div>
+          <div>
+            FS Initialized: <span id="fsLoaded"></span>
+          </div>
+          <div>
+            Capture state: <span id="captureStarted"></span>
+          </div>
+          <div class="fs-unmask">
+            Current session URL:
+            <span id="sessionURL-label"></span>
+            <a id="sessionURL-injection" target="_blank" href=""></a>
+          </div>
         </div>
-    </div>
+  </div>
 
     <!-- Fullstory snippet, 2.0.0 -->
     <script>
