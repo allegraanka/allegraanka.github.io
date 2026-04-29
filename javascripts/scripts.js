@@ -450,21 +450,21 @@ console.log(segmentAnonymousIds);
 //   return a / b;
 // }
 
-function checkAge(age) {
-  if (age < 18) {
-    throw new Error("This should trigger the catch block.");
-  }
-  return "This should NOT trigger the catch block.";
-}
+// function checkAge(age) {
+//   if (age < 18) {
+//     throw new Error("This should trigger the catch block.");
+//   }
+//   return "This should NOT trigger the catch block.";
+// }
 
-try {
-  console.log(checkAge(10)); // Change this to 20 to see it skip the catch
-} catch (error) {
-  console.error(
-    "This is a console.error in the catch block: " + error.message,
-  );
-}
+// try {
+//   console.log(checkAge(10)); // Change this to 20 to see it skip the catch
+// } catch (error) {
+//   console.error(
+//     "This is a console.error in the catch block: " + error.message,
+//   );
+// }
 
-console.log("is this thing on?");
+// console.log("is this thing on?");
 
-throw new Error("This is a deliberate uncaught exception for testing.");
+// throw new Error("This is a deliberate uncaught exception for testing.");
