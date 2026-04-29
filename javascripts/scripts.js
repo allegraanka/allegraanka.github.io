@@ -20,7 +20,7 @@ let rulesInput = window[RULES_KEY];
 let consoleOnly = window[CONSOLE_ONLY_KEY] ?? false;
 
 function getFullstoryDetails() {
-  console.log('...getting FS details');
+  console.log("...getting FS details");
   if (window._fs_org) {
     orgId.innerHTML = window._fs_org;
   } else {
@@ -49,7 +49,7 @@ captureStarted.innerText = "Capture has shut down.";
 FS("observe", {
   type: "start",
   callback: () => {
-    captureStarted.innerText = "Capture has started up."
+    captureStarted.innerText = "Capture has started up.";
     const sessionURL = FS("getSession", { format: "url" });
     if (sessionURL) {
       console.log(sessionURL);
@@ -124,14 +124,14 @@ function generateUid(length) {
 }
 
 // Fire a test custom event
-trackEvent.addEventListener('click', () => {
-  FS('trackEvent', {
-    name: 'Test Custom Event',
+trackEvent.addEventListener("click", () => {
+  FS("trackEvent", {
+    name: "Test Custom Event",
     properties: {
-      firedAt: Date.now()
-    }
+      firedAt: Date.now(),
+    },
   });
-  console.log('Test Custom Event fired.');
+  console.log("Test Custom Event fired.");
 });
 
 // Fullstory ragehook
@@ -449,3 +449,22 @@ console.log(segmentAnonymousIds);
 // function divideNumbers(a, b) {
 //   return a / b;
 // }
+
+function checkAge(age) {
+  if (age < 18) {
+    throw new Error("This should trigger the catch block.");
+  }
+  return "This should NOT trigger the catch block.";
+}
+
+try {
+  console.log(checkAge(10)); // Change this to 20 to see it skip the catch
+} catch (error) {
+  console.error(
+    "This is a console.error in the catch block: " + error.message,
+  );
+}
+
+console.log("is this thing on?");
+
+throw new Error("This is a deliberate uncaught exception for testing.");
