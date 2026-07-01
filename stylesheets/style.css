@@ -106,8 +106,8 @@ h2 {
 
 .inputContainer {
   display: flex;
-  margin: 25px;
-  padding: 10px;
+  margin: 10px;
+  padding: 35px;
 }
 
 .radio-group-container {
@@ -134,4 +134,24 @@ h2 {
 
 .radio-group__label {
   cursor: pointer;
+}
+
+.mask_section,
+#testInputsContainer {
+  margin: 25px;
+  padding: 55px;
+}
+
+.mask_section__item {
+  margin: 15px;
+  padding: 5px;
+}
+
+.mask_section__container {
+  padding: 10px;
+}
+
+.testInputsContainer_item {
+  margin: 10px;
+  padding: 6px;
 }

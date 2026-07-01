@@ -6,7 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;500;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylesheets/style.css" />
+    <link rel="stylesheet" href="stylesheets/pizza-style.css" />
     <title>AMA | FS Testing</title>
+
+    <script>
+      window['_fs_capture_on_startup'] = false;
+      window['_fs_host'] = 'fullstory.com';
+      window['_fs_script'] = 'edge.fullstory.com/s/fs.js';
+      window['_fs_org'] = 'o-1XWX6V-na1';
+      window['_fs_namespace'] = 'FS';
+      !function (m, n, e, t, l, o, g, y) {
+        var s, f, a = function (h) {
+          return !(h in m) || (m.console && m.console.log && m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].'), !1)
+        }(e)
+          ; function p(b) {
+            var h, d = []; function j() {
+              h && (d.forEach((function (b) {
+                var d; try { d = b[h[0]] && b[h[0]](h[1]) } catch (h) { return void (b[3] && b[3](h)) }
+                d && d.then ? d.then(b[2], b[3]) : b[2] && b[2](d)
+              })), d.length = 0)
+            } function r(b) { return function (d) { h || (h = [b, d], j()) } } return b(r(0), r(1)), {
+              then: function (b, h) { return p((function (r, i) { d.push([b, h, r, i]), j() })) }
+            }
+          } a && (g = m[e] = function () {
+            var b = function (b, d, j, r) {
+              function i(i, c) {
+                h(b, d, j, i, c, r)
+              } r = r || 2; var c, u = /Async$/; return u.test(b) ? (b = b.replace(u, ""), "function" == typeof Promise ? new Promise(i) : p(i)) : h(b, d, j, c, c, r)
+            }
+              ; function h(h, d, j, r, i, c) { return b._api ? b._api(h, d, j, r, i, c) : (b.q && b.q.push([h, d, j, r, i, c]), null) } return b.q = [], b
+          }(), y = function (b) {
+            function h(h) {
+              "function" == typeof h[4] && h[4](new Error(b))
+            } var d = g.q; if (d) { for (var j = 0; j < d.length; j++)h(d[j]); d.length = 0, d.push = h }
+          }, function () {
+            (o = n.createElement(t)).async = !0, o.crossOrigin = "anonymous", o.src = "https://" + l, o.onerror = function () { y("Error loading " + l) }
+              ; var b = n.getElementsByTagName(t)[0]; b && b.parentNode ? b.parentNode.insertBefore(o, b) : n.head.appendChild(o)
+          }(), function () {
+            function b() { }
+            function h(b, h, d) { g(b, h, d, 1) } function d(b, d, j) { h("setProperties", { type: b, properties: d }, j) } function j(b, h) { d("user", b, h) } function r(b, h, d) {
+              j({
+                uid: b
+              }, d), h && j(h, d)
+            } g.identify = r, g.setUserVars = j, g.identifyAccount = b, g.clearUserCookie = b, g.setVars = d, g.event = function (b, d, j) {
+              h("trackEvent", {
+                name: b, properties: d
+              }, j)
+            }, g.anonymize = function () { r(!1) }, g.shutdown = function () { h("shutdown") }, g.restart = function () { h("restart") },
+              g.log = function (b, d) { h("log", { level: b, msg: d }) }, g.consent = function (b) { h("setIdentity", { consent: !arguments.length || b }) }
+          }(), s = "fetch",
+            f = "XMLHttpRequest", g._w = {}, g._w[f] = m[f], g._w[s] = m[s], m[s] && (m[s] = function () { return g._w[s].apply(this, arguments) }), g._v = "2.0.0")
+      }(window, document, window._fs_namespace, "script", window._fs_script);
+    </script>
 </head>
 
 <body>
@@ -26,6 +77,7 @@
           <button id='anonymize' class='button fs-unmask'>Anonymize</button>
           <button id='shutdownCapture' class='button fs-unmask'>FS('shutdown')</button>
           <button id='identify' class='button fs-unmask'>FS('setIdentity')</button>
+          <button id='trackEvent' class='button fs-unmask'>FS('trackEvent')</button>
       </div>
 
       <div class="_org-details-section">
@@ -50,58 +102,70 @@
         </div>
   </div>
 
-    <!-- Fullstory snippet, 2.0.0 -->
-    <script>
-    window['_fs_capture_on_startup'] = false;
-    window['_fs_host'] = 'fullstory.com';
-    window['_fs_script'] = 'edge.fullstory.com/s/fs.js';
-    window['_fs_org'] = 'o-1XWX6V-na1';
-    window['_fs_namespace'] = 'FS';
-    !function (m, n, e, t, l, o, g, y) {
-      var s, f, a = function (h) {
-        return !(h in m) || (m.console && m.console.log && m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].'), !1)
-      }(e)
-      ; function p(b) {
-        var h, d = []; function j() {
-          h && (d.forEach((function (b) {
-            var d; try { d = b[h[0]] && b[h[0]](h[1]) } catch (h) { return void (b[3] && b[3](h)) }
-            d && d.then ? d.then(b[2], b[3]) : b[2] && b[2](d)
-          })), d.length = 0)
-        } function r(b) { return function (d) { h || (h = [b, d], j()) } } return b(r(0), r(1)), {
-          then: function (b, h) { return p((function (r, i) { d.push([b, h, r, i]), j() })) }
-        }
-      } a && (g = m[e] = function () {
-        var b = function (b, d, j, r) {
-          function i(i, c) {
-            h(b, d, j, i, c, r)
-          } r = r || 2; var c, u = /Async$/; return u.test(b) ? (b = b.replace(u, ""), "function" == typeof Promise ? new Promise(i) : p(i)) : h(b, d, j, c, c, r)
-        }
-        ; function h(h, d, j, r, i, c) { return b._api ? b._api(h, d, j, r, i, c) : (b.q && b.q.push([h, d, j, r, i, c]), null) } return b.q = [], b
-      }(), y = function (b) {
-        function h(h) {
-          "function" == typeof h[4] && h[4](new Error(b))
-        } var d = g.q; if (d) { for (var j = 0; j < d.length; j++)h(d[j]); d.length = 0, d.push = h }
-      }, function () {
-        (o = n.createElement(t)).async = !0, o.crossOrigin = "anonymous", o.src = "https://" + l, o.onerror = function () { y("Error loading " + l) }
-          ; var b = n.getElementsByTagName(t)[0]; b && b.parentNode ? b.parentNode.insertBefore(o, b) : n.head.appendChild(o)
-      }(), function () {
-        function b() { }
-        function h(b, h, d) { g(b, h, d, 1) } function d(b, d, j) { h("setProperties", { type: b, properties: d }, j) } function j(b, h) { d("user", b, h) } function r(b, h, d) {
-          j({
-            uid: b
-          }, d), h && j(h, d)
-        } g.identify = r, g.setUserVars = j, g.identifyAccount = b, g.clearUserCookie = b, g.setVars = d, g.event = function (b, d, j) {
-          h("trackEvent", {
-            name: b, properties: d
-          }, j)
-        }, g.anonymize = function () { r(!1) }, g.shutdown = function () { h("shutdown") }, g.restart = function () { h("restart") },
-          g.log = function (b, d) { h("log", { level: b, msg: d }) }, g.consent = function (b) { h("setIdentity", { consent: !arguments.length || b }) }
-      }(), s = "fetch",
-        f = "XMLHttpRequest", g._w = {}, g._w[f] = m[f], g._w[s] = m[s], m[s] && (m[s] = function () { return g._w[s].apply(this, arguments) }), g._v = "2.0.0")
-    }(window, document, window._fs_namespace, "script", window._fs_script);
-  </script>
+  <main class="pizza-page">
+    <form class="order-card" id="pizzaOrderForm">
+      <h1>Hot Pizza</h1>
+      <p class="subtitle">Build your pizza and send a test order.</p>
+      <label for="customerName">Name</label>
+      <input id="customerName" name="customerName" type="text" required />
+      <label for="phone">Phone</label>
+      <input id="phone" name="phone" type="tel" required />
+      <fieldset>
+        <legend>Pizza Size</legend>
+        <div class="size-options">
+          <label class="option">
+            <input type="radio" name="size" value="small" required />
+            Small
+          </label>
+          <label class="option">
+            <input type="radio" name="size" value="medium" />
+            Medium
+          </label>
+          <label class="option">
+            <input type="radio" name="size" value="large" />
+            Large
+          </label>
+          <label class="option">
+            <input type="radio" name="size" value="sheet" />
+            Sheet
+          </label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Toppings</legend>
+        <div class="topping-grid">
+          <label class="option"><input class="unmask_item" type="checkbox" name="toppings" value="pepperoni" /> Pepperoni</label>
+          <label class="option"><input class="unmask_item" type="checkbox" name="toppings" value="sausage" /> Sausage</label>
+          <label class="option"><input class="unmask_item" type="checkbox" name="toppings" value="mushrooms" /> Mushrooms</label>
+          <label class="option"><input class="unmask_item" type="checkbox" name="toppings" value="onions" /> Onions</label>
+          <label class="option"><input class="unmask_item" type="checkbox" name="toppings" value="green peppers" /> Green Peppers</label>
+          <label class="option"><input class="unmask_item" type="checkbox" name="toppings" value="black olives" /> Black Olives</label>
+          <label class="option"><input class="unmask_item" type="checkbox" name="toppings" value="extra cheese" /> Extra Cheese</label>
+          <label class="option"><input class="unmask_item"type="checkbox" name="toppings" value="pineapple" /> Pineapple</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Payment Information</legend>
+        <label for="cardName">Name on Card</label>
+        <input id="cardName" class="fs-mask"name="cardName" type="text" placeholder="Test User" />
+        <label for="cardNumber">Test Card Number</label>
+        <input id="cardNumber" class="fs-exclude" name="cardNumber" type="text" inputmode="numeric" placeholder="4242 4242 4242 4242" />
+        <label for="expiration">Expiration</label>
+        <input id="expiration" class="fs-exclude" name="expiration" type="text" placeholder="12/34" />
+        <label for="cvv">CVV</label>
+        <input id="cvv" class="fs-exclude" name="cvv" type="text" inputmode="numeric" placeholder="123" />
+      </fieldset>
+      <label for="notes">Special Instructions</label>
+      <textarea id="notes" name="notes" placeholder="Optional"></textarea>
+      <button type="submit">Submit Order</button>
+      <div class="status" id="statusMessage"></div>
+    </form>
+  </main>
 
-    <!-- Segment snippet -->
+    <!-- Fullstory snippet, 2.0.0 -->
+   
+
+    <!-- Segment snippet
     <script>
         !function () {
             var i = "analytics", analytics = window[i] = window[i] || []; if (!analytics.initialize) if (analytics.invoked) window.console && console.error && console.error("Segment snippet included twice."); else {
@@ -110,7 +174,7 @@
                 analytics.page();
             }
         }();
-    </script>
+    </script> -->
 
     <script src="javascripts/scripts.js"></script>
 </body>
