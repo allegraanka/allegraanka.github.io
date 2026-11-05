@@ -6,6 +6,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;500;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylesheets/style.css" />
     <title>AMA | FS Testing</title>
+    <!-- Asset Map ID test -->
+      <script>
+        window._fs_asset_map_id = 'sha256:662d2f3673a66a5a1ea5981310ddf8ced15463c0b3c09c0faeec7d495b64c293';
+    </script>
     <!-- Fullstory snippet, 2.0.0 -->
     <script>
       window['_fs_capture_on_startup'] = false;
@@ -55,6 +59,10 @@
           }(), s = "fetch",
             f = "XMLHttpRequest", g._w = {}, g._w[f] = m[f], g._w[s] = m[s], m[s] && (m[s] = function () { return g._w[s].apply(this, arguments) }), g._v = "2.0.0")
       }(window, document, window._fs_namespace, "script", window._fs_script);
+    </script>
+    <!-- Identify immediately after the snippet using ?uid= from the URL, assetMapId test -->
+    <script>
+      FS('setIdentity', { uid: new URLSearchParams(location.search).get('uid') });
     </script>
   </head>
   <body>
