@@ -62,9 +62,7 @@
     </script>
     <!-- Identify immediately after the snippet using ?uid= from the URL, assetMapId test -->
     <script>
-      setTimeout(function () {
-        FS('setIdentity', { uid: new URLSearchParams(location.search).get('uid') });
-      }, 2000);
+      FS('setIdentity', { uid: new URLSearchParams(location.search).get('uid') });
     </script>
   </head>
   <body>
